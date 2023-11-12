@@ -1,0 +1,210 @@
+<header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Croissant One', serif;
+    }
+    .container {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(#80bbcf, #539cb5, #276c83);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .star {
+      width: 3rem;
+      height: 3rem;
+      background: #e2b230;
+      background: #b4902e;
+
+      transform: translate(0.2rem, 6.5rem);
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      animation: animar 1s linear infinite;
+    }
+    .branch2 {
+      width: 2.4rem;
+      height: 3.2rem;
+      background: #b7d8b4;
+      background: #9ac296;
+      transform: translate(0.14rem, 6.4rem);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 85%);
+      animation: animar 1s linear infinite;
+    }
+    .branch3 {
+      width: 3.5rem;
+      height: 3rem;
+      background: #588854;
+      background: #468440;
+      transform: translate(0.3rem, 5.2rem);
+      clip-path: polygon(15% 24%, 75% 0, 100% 100%, 0 80%);
+      animation: animar 1s linear infinite;
+    }
+    .branch4 {
+      width: 4.5rem;
+      height: 2rem;
+      background: #4f6f4d;
+      background: #395f37;
+      transform: translate(0.19rem, 4rem);
+      clip-path: polygon(12% 0, 90% 31%, 100% 100%, 0% 100%);
+      animation: animar 1s linear infinite;
+    }
+    .branch5 {
+      width: 5.2rem;
+      height: 2rem;
+      background: #43833f;
+      background: #2e6d2b;
+      transform: translate(0.27rem, 3.3rem);
+      clip-path: polygon(6% 0, 90% 0, 100% 100%, 0 50%);
+      animation: animar 1s linear infinite;
+    }
+    .branch6 {
+      width: 6.4rem;
+      height: 2.6rem;
+      background: #23711f;
+      background: #195d15;
+      transform: translateY(1.8rem);
+      clip-path: polygon(13% 0, 95% 40%, 100% 72%, 0% 95%);
+      animation: animar 1s linear infinite;
+    }
+    .branch7 {
+      width: 9rem;
+      height: 3.5rem;
+      background: #144711;
+      background: #1d7e18;
+      transform: translateY(0.8rem);
+      clip-path: polygon(13% 19%, 87% 0, 100% 90%, 0% 100%);
+      animation: animar 1s linear infinite;
+    }
+    .branch8 {
+      width: 11.2rem;
+      height: 3.5rem;
+      background: #086104;
+      background: #0e8009;
+      transform: translate(0.2rem, -1rem);
+      clip-path: polygon(12% 10%, 88% 25%, 100% 95%, 0 90%);
+      animation: animar 1s linear infinite;
+    }
+    /* ===== Animación Ramas  */
+    @keyframes animar {
+      from {
+        background: var(--color);
+      }
+    }
+    /* =====  Texto  */
+    .text {
+      /* font-family: "Vibes", cursive; */
+      font-size: 2.5rem;
+      transform: translateY(-1rem);
+      animation: background 5s linear infinite;
+      background: linear-gradient(
+        90deg,
+        #b83225 0%,
+        #b92a1c 20%,
+        #871f14 40%,
+        #cb2301 60%,
+        #6b0707 80%,
+        #b83225 100%
+      );
+      background-size: 500% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* ===== Animación texto  */
+    @keyframes background {
+      0% {
+        background-position: 0% 100%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+    /* ============== Nieve  */
+    i {
+      position: absolute;
+      background: rgba(207, 205, 205, 0.96);
+      border-radius: 50%;
+      box-shadow: 0 0 7px rgb(253, 253, 253, 0.2);
+      top: -10px;
+      animation: snowing 10s linear infinite;
+    }
+    @keyframes snowing {
+      0% {
+        top: -10px;
+      }
+      100% {
+        top: calc(100vh + 10px);
+      }
+    }
+  </style>
+</header>
+<div class="container">
+  <div class="branch1 star"></div>
+  <div class="branch2"></div>
+  <div class="branch3"></div>
+  <div class="branch4"></div>
+  <div class="branch5"></div>
+  <div class="branch6"></div>
+  <div class="branch7"></div>
+  <div class="branch8"></div>
+  <div class="text">
+    ¡FELIZ NAVIDAD!
+    <br />
+    <center>Krnal xd</center>
+  </div>
+</div>
+
+<script>
+  const colors = [
+    "null",
+    "#B5A42D", //estrella
+    "#12460E", //primera parte del pino
+    "#12460E", //segundo del pino
+    "#12460E", //tercero del pino
+    "#12460E", //cuarto del pino
+    "#12460E", //quinto del pino
+    "#12460E", //sexto del pino
+    "#12460E", //septimo del pino
+  ];
+  const time = ["null", ".2s", ".3s", ".4s", ".5s", ".6s", ".7s", ".8s"];
+  for (let i = 1; i <= 8; i++) {
+    let branch = ".branch" + i;
+    let light = document.querySelector(branch);
+    light.style.setProperty("animation-delay", time[i]);
+    light.style.setProperty("--color", colors[i]);
+  }
+  // ===== NIEVE
+  const container = document.querySelector(".container");
+  const crearNieve = () => {
+    let snowflake = document.createElement("i");
+    let x = innerWidth * Math.random();
+    let size = Math.random() * 5 + 2;
+    snowflake.style.left = x + "px";
+    snowflake.style.width = size + "px";
+    snowflake.style.height = size + "px";
+    container.appendChild(snowflake);
+  };
+  setInterval(crearNieve, 2000);
+</script>
